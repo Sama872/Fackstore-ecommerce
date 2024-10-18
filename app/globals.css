@@ -40,3 +40,30 @@ a {
     color-scheme: dark;
   }
 }
+.header-img{
+  animation-name: header-img;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes header-img {
+  0%{transform: translateY(3px);}
+  20%{transform: translateY(-3px);}
+  40%{transform: translateY(3px);}
+  60%{transform: translateY(-3px);}
+  80%{transform: translateY(3px);}
+  100%{transform: translateY(-3px);}
+  
+}
+.productCard{
+  transition:all 0.5s ease;
+}
+.productCard:hover{
+ transform: scale(1.1)
+}
+.btn-color{
+  background-color:#802C6E;
+}
+.btn-color:hover{
+  background-color:#802C6E;
+}
