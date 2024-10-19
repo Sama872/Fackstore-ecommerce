@@ -1,19 +1,14 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-
-
-interface Rating {
-  rate: number;  
-  count: number; 
-}
-
-interface Product {
+export interface Product {
   id: number;
   title: string;
   price: number;
   image: string;
   category: string;
-  rating: Rating;
+  rating: {
+    rate: number;
+  };
 }
 interface IProductsState {
   products: Product[];

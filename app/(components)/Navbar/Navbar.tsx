@@ -1,8 +1,8 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import logo from '../../images/logo (1).png';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Navbar() {
   return (
     <div>
@@ -26,7 +26,7 @@ export default function Navbar() {
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                 Home
+                 <FontAwesomeIcon icon={faShoppingCart}/>
                 </a>
               </li>
             </ul>
